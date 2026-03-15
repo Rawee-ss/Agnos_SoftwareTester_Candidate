@@ -1,5 +1,5 @@
 *** Variables ***
-${url_login}                        https://dev.app.agnoshealth.com/ai_dashboard/login/
+${url_login}                        https://dev.app.agnoshealth.com/ai_dashboard/login
 ${browser}                          gc
 ${logo_login}                       xpath=//*[@id="root"]/div/div/div/div[1]/img
 ${locator_email}                    id=Email

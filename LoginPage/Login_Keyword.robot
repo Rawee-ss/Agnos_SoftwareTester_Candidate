@@ -26,7 +26,7 @@ Login Pass Case
     Input Password                                       ${locator_password}                 12345
     Click Element                                        ${locator_btn_Signin}
     Wait Until Element Is Not Visible                    ${msg_login} 
-    Wait Until Location Contains                         https://dev.app.agnoshealth.com/ai_dashboard/
+    Wait Until Location Contains                         https://dev.app.agnoshealth.com/ai_dashboard
     Wait Until Page Contains                             Diagnosis List
     
 Verify Error Message

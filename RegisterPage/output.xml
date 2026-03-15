@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.4 on win32)" generated="2026-03-15T23:14:16.203704" rpa="false" schemaversion="5">
+<suite id="s1" name="Register Testcase" source="C:\Users\Rawee\Documents\Software tester candidate assignment\Automate_Testing\RegisterPage\Register_Testcase.robot">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary" type="SETUP">
+<arg>0.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-03-15T23:14:16.402454" elapsed="0.000000"/>
+</kw>
+<test id="s1-t1" name="Verify Default Register Page" line="11">
+<kw name="Open Website Page" owner="Login_Keyword" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-15T23:14:16.402454" level="INFO">Opening browser 'gc' to base url 'https://dev.app.agnoshealth.com/ai_dashboard/agnos/sign_up/'.</msg>
+<arg>${url_website}</arg>
+<arg>${browser_website}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-15T23:14:16.402454" elapsed="5.439433"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-15T23:14:21.841887" elapsed="0.226573"/>
+</kw>
+<arg>${url_register}</arg>
+<doc>ใช้สำหรับเปิดหน้า website</doc>
+<status status="PASS" start="2026-03-15T23:14:16.402454" elapsed="5.666006"/>
+</kw>
+<kw name="Default Register Page" owner="Register_Keyword">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${logo_register}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-15T23:14:22.068460" elapsed="0.427345"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>AI SCREENING DASHBOARD</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-15T23:14:22.495805" elapsed="0.210157"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Create Account</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-15T23:14:22.705962" elapsed="0.315917"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-15T23:14:23.021879" elapsed="0.417240"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-15T23:14:23.439119" elapsed="0.424207"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_showPassword}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-15T23:14:23.863326" elapsed="0.419081"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_confirmPassword}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-15T23:14:24.282407" elapsed="0.440829"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_showConfirmPassword}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-15T23:14:24.723236" elapsed="0.417911"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_btn_confirm}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-15T23:14:25.141147" elapsed="0.419283"/>
+</kw>
+<doc>แสดงรายละเอียดหน้า Login</doc>
+<status status="PASS" start="2026-03-15T23:14:22.068460" elapsed="3.491970"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-15T23:14:25.560430" elapsed="2.293151"/>
+</kw>
+<status status="PASS" start="2026-03-15T23:14:16.402454" elapsed="11.451127"/>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-03-15T23:14:27.853581" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-03-15T23:14:16.203704" elapsed="11.649877"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Register Testcase" id="s1" pass="1" fail="0" skip="0">Register Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
