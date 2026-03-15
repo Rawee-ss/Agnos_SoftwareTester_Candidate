@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-03-15T22:31:02.550392" rpa="false" schemaversion="5">
+<suite id="s1" name="Automate Testing" source="C:\Users\Rawee\Documents\Software tester candidate assignment\Automate_Testing">
+<suite id="s1-s1" name="LoginPage" source="C:\Users\Rawee\Documents\Software tester candidate assignment\Automate_Testing\LoginPage">
+<suite id="s1-s1-s1" name="Login Testcase" source="C:\Users\Rawee\Documents\Software tester candidate assignment\Automate_Testing\LoginPage\Login_Testcase.robot">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary" type="SETUP">
+<arg>0.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-03-15T22:31:02.845410" elapsed="0.000424"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Verify Disable Button Signin" line="35">
+<kw name="Open Website Page" owner="Login_Keyword" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-15T22:31:02.850098" level="INFO">Opening browser 'gc' to base url 'https://dev.app.agnoshealth.com/ai_dashboard/login/'.</msg>
+<arg>${url_website}</arg>
+<arg>${browser_website}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-15T22:31:02.849713" elapsed="4.846495"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-15T22:31:07.696631" elapsed="0.225959"/>
+</kw>
+<arg>${url_login}</arg>
+<doc>ใช้สำหรับเปิดหน้า website</doc>
+<status status="PASS" start="2026-03-15T22:31:02.849288" elapsed="5.073545"/>
+</kw>
+<kw name="Disable Button Signin" owner="Login_Keyword">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-15T22:31:07.924363" elapsed="0.419758"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-15T22:31:08.344932" level="INFO">Typing text 'test@gmail.com' into text field 'id=Email'.</msg>
+<arg>${locator_email}</arg>
+<arg>${input_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-15T22:31:08.344427" elapsed="0.708228"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-15T22:31:09.052966" elapsed="0.416294"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-03-15T22:31:09.469985" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-03-15T22:31:09.899906" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${locator_password}</arg>
+<arg>${input_password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-15T22:31:09.469533" elapsed="0.668939"/>
+</kw>
+<kw name="Element Should Be Disabled" owner="SeleniumLibrary">
+<arg>${locator_btn_Signin}</arg>
+<doc>Verifies that element identified by ``locator`` is disabled.</doc>
+<status status="PASS" start="2026-03-15T22:31:10.138798" elapsed="0.416794"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2026-03-15T22:31:10.555955" elapsed="0.376026"/>
+</kw>
+<arg>test@gmail.com</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2026-03-15T22:31:07.923376" elapsed="3.008921"/>
+</kw>
+<kw name="Disable Button Signin" owner="Login_Keyword">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-15T22:31:10.934118" elapsed="1.092289"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-15T22:31:12.027579" level="INFO">Typing text '' into text field 'id=Email'.</msg>
+<arg>${locator_email}</arg>
+<arg>${input_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-15T22:31:12.026901" elapsed="0.666825"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-15T22:31:12.694022" elapsed="0.415158"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-03-15T22:31:13.109998" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-03-15T22:31:13.539753" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${locator_password}</arg>
+<arg>${input_password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-15T22:31:13.109475" elapsed="0.673159"/>
+</kw>
+<kw name="Element Should Be Disabled" owner="SeleniumLibrary">
+<arg>${locator_btn_Signin}</arg>
+<doc>Verifies that element identified by ``locator`` is disabled.</doc>
+<status status="PASS" start="2026-03-15T22:31:13.783036" elapsed="0.414707"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2026-03-15T22:31:14.198130" elapsed="0.343005"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>12345</arg>
+<status status="PASS" start="2026-03-15T22:31:10.933058" elapsed="3.608339"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-15T22:31:14.541936" elapsed="2.309597"/>
+</kw>
+<doc>TC-LOGIN-007 to TC-LOGIN-008 ระบบปิดใช้งานปุ่ม Sign in เนื่องจากไม่กรอกข้อมูลใน Field E-mail และ Password</doc>
+<status status="PASS" start="2026-03-15T22:31:02.846024" elapsed="14.005956"/>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-03-15T22:31:16.856093" elapsed="0.000349"/>
+</kw>
+<status status="PASS" start="2026-03-15T22:31:02.600333" elapsed="14.256189"/>
+</suite>
+<status status="PASS" start="2026-03-15T22:31:02.591835" elapsed="14.267758"/>
+</suite>
+<status status="PASS" start="2026-03-15T22:31:02.556184" elapsed="14.305728"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Automate Testing" id="s1" pass="1" fail="0" skip="0">Automate Testing</stat>
+<stat name="LoginPage" id="s1-s1" pass="1" fail="0" skip="0">Automate Testing.LoginPage</stat>
+<stat name="Login Testcase" id="s1-s1-s1" pass="1" fail="0" skip="0">Automate Testing.LoginPage.Login Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
